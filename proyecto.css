@@ -1,0 +1,312 @@
+/*------------------------- General -------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	
+    height: 100vh;
+	
+}
+
+body {
+    
+    background-color: black;
+    color: antiquewhite;
+    position: relative;
+    background: transparent;
+}
+body::before{
+    content: "";
+    position: fixed;
+    background: #040404 url("https://gastonperez.ar/img/header/stars.png") top right no-repeat;
+    left: 0;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.header-tops{
+    text-align: center;
+    padding: 30vh
+}
+
+.cotainer h1{ 
+    font-family: 'Courier New';
+    font-size: 100px;
+   
+}
+.cotainer h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.twitter{
+    margin: 10px;
+    
+}
+.facebook{
+    margin: 20px; 
+}
+.instagram{
+      margin: 20px;
+     
+}
+.linkedln{
+ margin: 20px;
+
+}
+
+.typed-cursor {
+	font-size: calc(0.8em + 1vw);
+	font-weight: 200;
+}
+.mb-6 {
+	margin-bottom: 7rem !important;
+}
+.bg-secondary {
+	background-color: #131313 !important;
+}
+
+.bg-tertiary {
+	background-color: #202020 !important;
+}
+
+.border-radius-1em {
+	border-radius: 1em !important;
+}
+
+a {
+	text-decoration: none;
+    color: white;
+}
+
+h2 {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+div, p, h1, h2, h3, h4, h5, h6, ul, li, img, a, i {
+	background-color: transparent;
+	
+}
+
+button {
+
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+main {
+	
+	position: relative;
+	z-index: 10;
+}
+.skills h3 {
+	margin: 0;
+}
+
+.skills ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 0 0 5em 0;
+}
+
+.skills ul:last-child {
+	margin: 0;
+}
+
+.skills ul::after {
+	content: "";
+  	flex: auto;
+}
+
+.skills li {
+	min-width: 110px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 2em;
+	margin-top: 2em;
+	transition: 0.2s;
+	background-color: #202020;
+	border-radius: 5px;
+	padding: 1em;
+}
+
+.skills li:hover {
+	transform: scale(1.2);
+}
+
+.skills li:last-child {
+	margin-right: 0;
+}
+
+.skills li p {
+	margin: auto 0 0 0;
+}
+
+.skills img {
+	width: 50px;
+	margin: auto;
+}
+
+
+.word { 
+	
+
+	font-family: 'Courier New';
+    font-size: 60px;
+	color: white;
+	line-height: 1.4em;
+	height: 1.4em;
+	padding: 0 14px 0 7px;
+	display: inline-block;
+	vertical-align: middle;
+	
+  }
+  
+.word:before {
+	content: '';
+	background-color: whitesmoke;
+	width: 1px;
+	position: absolute;
+	top: 4px;
+	bottom: 5px;
+	right: 7px;
+  }
+
+
+.btn-seeMore {
+	color: #fff;
+	background: transparent;
+	font-weight: 200;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.btn-seeMore-box {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+	margin-top: 4rem;
+}
+
+.btn-seeMore-anim {
+	color: #fff;
+	transition: all 0.5s;
+	position: relative;
+}
+
+.btn-seeMore-anim::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: rgba(255, 255, 255, 0.050);
+	transition: all 0.3s;
+}
+
+.btn-seeMore-anim:hover::before {
+	opacity: 0;
+	transform: scale(0.5,0.5);
+}
+
+.btn-seeMore-anim::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+	transform: scale(1.2,1.2);
+}
+
+.btn-seeMore-anim:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+.name-container {
+	position: relative;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.name {
+	font-size: calc(1em + 5vw);
+	font-family: 'Poiret One', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1rem;
+	background-color: inherit;
+	margin-bottom: 1rem;
+	margin-right: -1rem;
+	text-align: center;
+}
+
+.job-container {
+	height: 38px;
+}
+
+.job {
+	display: inline-block;
+	font-weight: 200;
+	font-size: calc(0.8em + 1vw);
+	background-color: inherit;
+}
+
+.job-after-typing {
+	font-weight: 700;
+}
+
+.delay-300ms {
+	animation-delay: 0.3s;
+}
+
+.delay-800ms {
+	animation-delay: 0.8s;
+}
+
+.delay-6s {
+	animation-delay: 6s;
+}
+
+.delay-6500ms {
+	animation-delay: 6.5s;
+}
+
+.delay-7s {
+	animation-delay: 7s;
+}
+
+.delay-7500ms {
+	animation-delay: 7.5s;
+}
+
